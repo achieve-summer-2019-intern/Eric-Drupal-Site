@@ -1,0 +1,32 @@
+uuid: 49341960-365c-4be5-9c82-8c2f66d59f74
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sidebar
+  module:
+    - node
+    - views
+  theme:
+    - bartik
+id: views_block__sidebar_block_1
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: 'views_block:sidebar-block_1'
+settings:
+  id: 'views_block:sidebar-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      sporting_event: sporting_event
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

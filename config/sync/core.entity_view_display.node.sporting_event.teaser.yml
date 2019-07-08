@@ -1,0 +1,84 @@
+uuid: 7d22c9b3-9477-4932-8af5-ba3d994ea959
+langcode: en
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.sporting_event.body
+    - field.field.node.sporting_event.field_date
+    - field.field.node.sporting_event.field_event_thumbnail_large
+    - field.field.node.sporting_event.field_event_thumbnail_medium
+    - field.field.node.sporting_event.field_event_thumbnail_small
+    - field.field.node.sporting_event.field_event_video
+    - field.field.node.sporting_event.field_sport_type
+    - image.style.thumbnail
+    - node.type.sporting_event
+  module:
+    - datetime
+    - image
+    - text
+    - user
+id: node.sporting_event.teaser
+targetEntityType: node
+bundle: sporting_event
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_date:
+    type: datetime_default
+    weight: 3
+    region: content
+    label: hidden
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+  field_event_thumbnail_large:
+    type: image
+    weight: 4
+    region: content
+    label: hidden
+    settings:
+      image_style: large
+      image_link: content
+    third_party_settings: {  }
+  field_event_thumbnail_medium:
+    type: image
+    weight: 5
+    region: content
+    label: hidden
+    settings:
+      image_style: medium
+      image_link: content
+    third_party_settings: {  }
+  field_event_thumbnail_small:
+    type: image
+    weight: 6
+    region: content
+    label: hidden
+    settings:
+      image_style: thumbnail
+      image_link: content
+    third_party_settings: {  }
+  field_sport_type:
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  field_event_video: true
