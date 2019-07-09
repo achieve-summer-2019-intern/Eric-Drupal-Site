@@ -1,0 +1,10 @@
+uuid: c8e252a0-a843-408f-8e8d-98d55735b2da
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.sports_grid_bottom
+label: 'Sports Grid Bottom'
+targetEntityType: node
+cache: true

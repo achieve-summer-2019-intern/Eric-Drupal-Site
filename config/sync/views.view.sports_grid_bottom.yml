@@ -3,6 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.sports_grid_bottom
     - core.entity_view_mode.node.teaser
     - node.type.sporting_event
   module:
@@ -209,42 +210,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
-    cache_metadata:
-      max-age: -1
-      contexts:
-        - 'languages:language_content'
-        - 'languages:language_interface'
-        - 'user.node_grants:view'
-        - user.permissions
-      tags: {  }
-  page_1:
-    display_plugin: page
-    id: page_1
-    display_title: Page
-    position: 2
-    display_options:
-      display_extenders: {  }
-      path: basketball/pro/nba
-      style:
-        type: grid
-        options:
-          uses_fields: false
-          columns: 3
-          automatic_width: true
-          alignment: horizontal
-          col_class_default: true
-          col_class_custom: ''
-          row_class_default: true
-          row_class_custom: ''
-      defaults:
-        style: false
-        row: false
-      row:
-        type: 'entity:node'
-        options:
-          relationship: none
-          view_mode: teaser
+          view_mode: sports_grid_bottom
     cache_metadata:
       max-age: -1
       contexts:

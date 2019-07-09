@@ -8,7 +8,7 @@ dependencies:
     - field.field.node.article.comment
     - field.field.node.article.field_image
     - field.field.node.article.field_tags
-    - image.style.large
+    - image.style.large_thumbnail
     - node.type.article
   module:
     - comment
@@ -43,7 +43,7 @@ content:
     weight: -1
     region: content
     settings:
-      image_style: large
+      image_style: large_thumbnail
       image_link: ''
     third_party_settings: {  }
     label: hidden

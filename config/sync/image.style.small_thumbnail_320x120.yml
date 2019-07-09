@@ -1,0 +1,15 @@
+uuid: 32444aa4-ec31-483c-81fe-2a1e1ae845d6
+langcode: en
+status: true
+dependencies: {  }
+name: small_thumbnail_320x120
+label: 'Small Thumbnail (320x120)'
+effects:
+  d59cf4af-15a9-492c-8dbb-870fa9cdab78:
+    uuid: d59cf4af-15a9-492c-8dbb-870fa9cdab78
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 120
+      anchor: center-center

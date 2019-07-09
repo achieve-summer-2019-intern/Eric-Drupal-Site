@@ -1,0 +1,10 @@
+uuid: 3590c38d-1960-4020-8171-16b927a7935b
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.sports_sidebar
+label: 'Event Sidebar'
+targetEntityType: node
+cache: true

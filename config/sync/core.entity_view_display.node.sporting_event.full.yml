@@ -6,9 +6,8 @@ dependencies:
     - core.entity_view_mode.node.full
     - field.field.node.sporting_event.body
     - field.field.node.sporting_event.field_date
+    - field.field.node.sporting_event.field_event_name
     - field.field.node.sporting_event.field_event_thumbnail_large
-    - field.field.node.sporting_event.field_event_thumbnail_medium
-    - field.field.node.sporting_event.field_event_thumbnail_small
     - field.field.node.sporting_event.field_event_video
     - field.field.node.sporting_event.field_sport_type
     - node.type.sporting_event
@@ -24,12 +23,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 1
+    weight: 2
     settings: {  }
     third_party_settings: {  }
     region: content
   field_date:
-    weight: 2
+    weight: 3
     label: hidden
     settings:
       format_type: medium
@@ -37,9 +36,17 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_event_name:
+    type: string
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
   field_event_video:
     type: entity_reference_entity_view
-    weight: 4
+    weight: 5
     region: content
     label: hidden
     settings:
@@ -47,7 +54,7 @@ content:
       link: false
     third_party_settings: {  }
   field_sport_type:
-    weight: 3
+    weight: 4
     label: hidden
     settings:
       link: true
@@ -55,11 +62,9 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 0
+    weight: 1
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
   field_event_thumbnail_large: true
-  field_event_thumbnail_medium: true
-  field_event_thumbnail_small: true

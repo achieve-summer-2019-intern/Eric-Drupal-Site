@@ -1,0 +1,15 @@
+uuid: 3b87ca95-f631-4ce5-80eb-c4d250dc1257
+langcode: en
+status: true
+dependencies: {  }
+name: medium_thumbnail
+label: 'Medium Thumbnail (320x240)'
+effects:
+  f553e768-9de4-4f96-88e0-879927b60819:
+    uuid: f553e768-9de4-4f96-88e0-879927b60819
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 320
+      height: 240
+      anchor: center-center

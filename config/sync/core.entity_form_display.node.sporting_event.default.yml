@@ -5,9 +5,8 @@ dependencies:
   config:
     - field.field.node.sporting_event.body
     - field.field.node.sporting_event.field_date
+    - field.field.node.sporting_event.field_event_name
     - field.field.node.sporting_event.field_event_thumbnail_large
-    - field.field.node.sporting_event.field_event_thumbnail_medium
-    - field.field.node.sporting_event.field_event_thumbnail_small
     - field.field.node.sporting_event.field_event_video
     - field.field.node.sporting_event.field_sport_type
     - image.style.thumbnail
@@ -44,24 +43,16 @@ content:
     third_party_settings: {  }
     type: datetime_default
     region: content
+  field_event_name:
+    weight: 128
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
   field_event_thumbnail_large:
     weight: 125
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_event_thumbnail_medium:
-    weight: 126
-    settings:
-      progress_indicator: throbber
-      preview_image_style: thumbnail
-    third_party_settings: {  }
-    type: image_image
-    region: content
-  field_event_thumbnail_small:
-    weight: 127
     settings:
       progress_indicator: throbber
       preview_image_style: thumbnail

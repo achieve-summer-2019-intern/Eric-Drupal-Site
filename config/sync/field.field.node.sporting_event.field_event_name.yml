@@ -1,0 +1,19 @@
+uuid: 249b343f-51f8-474e-bd14-6a3faa84333d
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_event_name
+    - node.type.sporting_event
+id: node.sporting_event.field_event_name
+field_name: field_event_name
+entity_type: node
+bundle: sporting_event
+label: 'Event Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

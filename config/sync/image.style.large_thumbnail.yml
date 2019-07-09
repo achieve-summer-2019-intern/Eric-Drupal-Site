@@ -1,0 +1,15 @@
+uuid: 4cc6c10a-be70-4dd8-b563-d3ac1b35ad78
+langcode: en
+status: true
+dependencies: {  }
+name: large_thumbnail
+label: 'Large Thumbnail (640x480)'
+effects:
+  7f1729b3-2080-4e00-b773-7964bfeb2454:
+    uuid: 7f1729b3-2080-4e00-b773-7964bfeb2454
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 480
+      anchor: center-center

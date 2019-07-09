@@ -10,7 +10,7 @@ dependencies:
     - node
     - user
 id: sidebar
-label: Sidebar
+label: 'Event Sidebar'
 module: views
 description: ''
 tag: ''
@@ -59,6 +59,7 @@ display:
       row:
         type: 'entity:node'
         options:
+          relationship: none
           view_mode: teaser
       fields:
         title:
@@ -143,7 +144,7 @@ display:
             label: ''
           granularity: second
           plugin_id: datetime
-      title: Sidebar
+      title: 'Event Sidebar'
       header: {  }
       footer: {  }
       empty: {  }

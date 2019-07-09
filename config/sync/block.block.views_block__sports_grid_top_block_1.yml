@@ -1,11 +1,11 @@
-uuid: 0d88f87b-882a-4e38-b435-e77624bc5797
+uuid: f07100ab-506d-43ce-9de3-54aa3ec8277e
 langcode: en
 status: true
 dependencies:
   config:
     - views.view.sports_grid_top
   module:
-    - node
+    - system
     - views
   theme:
     - bartik
@@ -19,14 +19,12 @@ settings:
   id: 'views_block:sports_grid_top-block_1'
   label: ''
   provider: views
-  label_display: visible
+  label_display: '0'
   views_label: ''
   items_per_page: none
 visibility:
-  node_type:
-    id: node_type
-    bundles:
-      sporting_event: sporting_event
-    negate: false
-    context_mapping:
-      node: '@node.node_route_context:node'
+  request_path:
+    id: request_path
+    pages: '/node/*'
+    negate: true
+    context_mapping: {  }
