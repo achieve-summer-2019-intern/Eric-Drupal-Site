@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.full
-    - field.field.node.sporting_event.body
     - field.field.node.sporting_event.field_date
     - field.field.node.sporting_event.field_event_name
     - field.field.node.sporting_event.field_event_thumbnail_large
@@ -13,20 +12,12 @@ dependencies:
     - node.type.sporting_event
   module:
     - datetime
-    - text
     - user
 id: node.sporting_event.full
 targetEntityType: node
 bundle: sporting_event
 mode: full
 content:
-  body:
-    label: hidden
-    type: text_default
-    weight: 2
-    settings: {  }
-    third_party_settings: {  }
-    region: content
   field_date:
     weight: 3
     label: hidden

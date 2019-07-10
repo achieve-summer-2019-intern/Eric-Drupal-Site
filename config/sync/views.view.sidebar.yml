@@ -3,7 +3,7 @@ langcode: en
 status: true
 dependencies:
   config:
-    - core.entity_view_mode.node.teaser
+    - core.entity_view_mode.node.sports_sidebar
     - node.type.sporting_event
   module:
     - datetime
@@ -60,7 +60,7 @@ display:
         type: 'entity:node'
         options:
           relationship: none
-          view_mode: teaser
+          view_mode: sports_sidebar
       fields:
         title:
           id: title

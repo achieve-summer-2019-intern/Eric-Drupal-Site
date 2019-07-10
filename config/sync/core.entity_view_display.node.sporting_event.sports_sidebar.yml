@@ -1,70 +1,65 @@
-uuid: 0728a39f-5cc8-4ddf-8172-66f51012e79c
+uuid: 547a1cf8-2c3a-486a-9906-2d03596e86b3
 langcode: en
 status: true
 dependencies:
   config:
+    - core.entity_view_mode.node.sports_sidebar
     - field.field.node.sporting_event.field_date
     - field.field.node.sporting_event.field_event_name
     - field.field.node.sporting_event.field_event_thumbnail_large
     - field.field.node.sporting_event.field_event_video
     - field.field.node.sporting_event.field_league
     - field.field.node.sporting_event.field_sport_type
+    - image.style.small_thumbnail_320x120
     - node.type.sporting_event
   module:
     - datetime
-    - media
+    - image
     - user
-id: node.sporting_event.default
+id: node.sporting_event.sports_sidebar
 targetEntityType: node
 bundle: sporting_event
-mode: default
+mode: sports_sidebar
 content:
   field_date:
-    weight: 3
-    label: above
+    weight: 1
+    label: hidden
     settings:
       format_type: medium
       timezone_override: ''
     third_party_settings: {  }
     type: datetime_default
     region: content
-  field_event_name:
-    weight: 0
+  field_event_thumbnail_large:
+    type: image
+    weight: 4
+    region: content
     label: hidden
     settings:
-      link_to_entity: false
-    third_party_settings: {  }
-    type: string
-    region: content
-  field_event_video:
-    type: media_thumbnail
-    weight: 5
-    region: content
-    label: above
-    settings:
-      image_style: ''
-      image_link: ''
+      image_style: small_thumbnail_320x120
+      image_link: content
     third_party_settings: {  }
   field_league:
-    weight: 6
-    label: above
+    type: entity_reference_label
+    weight: 2
+    region: content
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
-    type: entity_reference_label
-    region: content
   field_sport_type:
-    weight: 4
-    label: above
+    weight: 3
+    label: hidden
     settings:
       link: true
     third_party_settings: {  }
     type: entity_reference_label
     region: content
   links:
-    weight: 1
+    weight: 0
     region: content
     settings: {  }
     third_party_settings: {  }
 hidden:
-  field_event_thumbnail_large: true
+  field_event_name: true
+  field_event_video: true

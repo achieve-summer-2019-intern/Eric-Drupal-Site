@@ -4,7 +4,6 @@ status: true
 dependencies:
   config:
     - core.entity_view_mode.node.teaser
-    - field.field.node.sporting_event.body
     - field.field.node.sporting_event.field_date
     - field.field.node.sporting_event.field_event_name
     - field.field.node.sporting_event.field_event_thumbnail_large
@@ -15,21 +14,12 @@ dependencies:
   module:
     - datetime
     - image
-    - text
     - user
 id: node.sporting_event.teaser
 targetEntityType: node
 bundle: sporting_event
 mode: teaser
 content:
-  body:
-    label: hidden
-    type: text_summary_or_trimmed
-    weight: 1
-    settings:
-      trim_length: 600
-    third_party_settings: {  }
-    region: content
   field_date:
     type: datetime_default
     weight: 3
