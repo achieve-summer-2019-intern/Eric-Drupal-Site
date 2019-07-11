@@ -1,4 +1,4 @@
-uuid: f07100ab-506d-43ce-9de3-54aa3ec8277e
+uuid: ced23a05-1625-4f82-8415-8b9f62dbda40
 langcode: en
 status: true
 dependencies:
@@ -7,18 +7,18 @@ dependencies:
   module:
     - views
   theme:
-    - bartik
-id: views_block__sports_grid_top_block_1
-theme: bartik
+    - bootstrap
+id: views_block__sports_grid_top_block_1_2
+theme: bootstrap
 region: content
-weight: -2
+weight: -6
 provider: null
 plugin: 'views_block:sports_grid_top-block_1'
 settings:
   id: 'views_block:sports_grid_top-block_1'
-  label: ''
+  label: 'Featured Events'
   provider: views
-  label_display: '0'
-  views_label: ''
+  label_display: visible
+  views_label: 'Featured Events'
   items_per_page: none
 visibility: {  }

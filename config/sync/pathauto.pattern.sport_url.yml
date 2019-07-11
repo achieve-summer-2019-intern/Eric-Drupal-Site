@@ -7,16 +7,16 @@ dependencies:
 id: sport_url
 label: 'Sport URL'
 type: 'canonical_entities:node'
-pattern: '[node:field_sport_type:entity:root]/[node:field_sport_type:entity:parent]/[node:field_sport_type]/[node:field_league]/[node:field_date:date:html_date]/[node:title]'
+pattern: '/[node:field_league:entity:root]/[node:field_league:entity:parent]/[node:field_league]/[node:field_date:date:html_year]/[node:field_date:date:html_yearless_date]/[node:title]'
 selection_criteria:
-  24047761-89e8-45c1-9cb5-f4b8a1fae342:
+  2c1a866e-fb69-4939-ab20-754467a42c60:
     id: node_type
     bundles:
       sporting_event: sporting_event
     negate: false
     context_mapping:
       node: node
-    uuid: 24047761-89e8-45c1-9cb5-f4b8a1fae342
+    uuid: 2c1a866e-fb69-4939-ab20-754467a42c60
 selection_logic: and
 weight: -5
 relationships: {  }
