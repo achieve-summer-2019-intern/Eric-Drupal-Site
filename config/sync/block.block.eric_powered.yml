@@ -1,0 +1,22 @@
+uuid: 9f2c08b2-a44a-4e84-a05a-c4c6de587cc8
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - eric
+_core:
+  default_config_hash: iggZSiUKz4mYP1YPJ8SsUfFu79HIgOTt6IDy3Up59aM
+id: eric_powered
+theme: eric
+region: footer_first
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

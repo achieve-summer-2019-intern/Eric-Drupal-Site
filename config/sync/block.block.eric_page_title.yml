@@ -1,0 +1,20 @@
+uuid: acd9b446-0096-40ba-9cb9-0fb13c9e2214
+langcode: en
+status: true
+dependencies:
+  theme:
+    - eric
+_core:
+  default_config_hash: 1TQP4b3ZnlzvIH9bj6cpCz_SyUHdJjLQkZnHpikjjhw
+id: eric_page_title
+theme: eric
+region: highlighted
+weight: -8
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

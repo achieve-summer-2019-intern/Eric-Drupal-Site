@@ -3,13 +3,13 @@ langcode: en
 status: true
 dependencies: {  }
 name: large_thumbnail
-label: 'Large Thumbnail (640x480)'
+label: 'Large Thumbnail (480x270)'
 effects:
-  7f1729b3-2080-4e00-b773-7964bfeb2454:
-    uuid: 7f1729b3-2080-4e00-b773-7964bfeb2454
+  4537e3f7-db94-4d9d-a027-e082aef12e8e:
+    uuid: 4537e3f7-db94-4d9d-a027-e082aef12e8e
     id: image_scale_and_crop
-    weight: 1
+    weight: 2
     data:
-      width: 640
-      height: 480
+      width: 480
+      height: 270
       anchor: center-center

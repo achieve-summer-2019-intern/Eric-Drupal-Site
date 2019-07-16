@@ -243,7 +243,7 @@ display:
           automatic_width: true
           alignment: horizontal
           col_class_default: true
-          col_class_custom: ''
+          col_class_custom: col-lg-4
           row_class_default: true
           row_class_custom: ''
       defaults:

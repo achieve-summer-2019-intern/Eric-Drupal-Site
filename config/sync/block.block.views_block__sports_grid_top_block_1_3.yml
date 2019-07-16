@@ -1,0 +1,24 @@
+uuid: 4aedba47-3ba4-4498-a692-7c9cb8c3bbea
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sports_grid_top
+  module:
+    - views
+  theme:
+    - eric
+id: views_block__sports_grid_top_block_1_3
+theme: eric
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:sports_grid_top-block_1'
+settings:
+  id: 'views_block:sports_grid_top-block_1'
+  label: 'Featured Events'
+  provider: views
+  label_display: visible
+  views_label: 'Featured Events'
+  items_per_page: none
+visibility: {  }

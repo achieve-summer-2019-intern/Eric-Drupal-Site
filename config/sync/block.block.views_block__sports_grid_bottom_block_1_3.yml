@@ -1,0 +1,24 @@
+uuid: 49a5032c-0bf2-4503-b71b-5a5fc01e4e0a
+langcode: en
+status: true
+dependencies:
+  config:
+    - views.view.sports_grid_bottom
+  module:
+    - views
+  theme:
+    - eric
+id: views_block__sports_grid_bottom_block_1_3
+theme: eric
+region: content
+weight: -6
+provider: null
+plugin: 'views_block:sports_grid_bottom-block_1'
+settings:
+  id: 'views_block:sports_grid_bottom-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility: {  }

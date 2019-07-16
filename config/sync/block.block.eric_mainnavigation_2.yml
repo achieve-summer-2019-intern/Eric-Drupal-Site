@@ -1,4 +1,4 @@
-uuid: 6dec8b92-b729-4039-8920-eb28622b4263
+uuid: 59b19652-a521-4eda-b3fc-c37a97f5e8d7
 langcode: en
 status: true
 dependencies:
@@ -7,11 +7,11 @@ dependencies:
   module:
     - superfish
   theme:
-    - bootstrap
-id: mainnavigation_2
-theme: bootstrap
-region: navigation_collapsible
-weight: 0
+    - eric
+id: eric_mainnavigation_2
+theme: eric
+region: top_header
+weight: -5
 provider: null
 plugin: 'superfish:main'
 settings:

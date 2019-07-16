@@ -1,4 +1,4 @@
-uuid: 6dec8b92-b729-4039-8920-eb28622b4263
+uuid: d122f622-c4e8-4657-bf96-d58b6fbc562c
 langcode: en
 status: true
 dependencies:
@@ -7,10 +7,10 @@ dependencies:
   module:
     - superfish
   theme:
-    - bootstrap
-id: mainnavigation_2
-theme: bootstrap
-region: navigation_collapsible
+    - bootstrap_barrio
+id: bootstrap_barrio_mainnavigation_2
+theme: bootstrap_barrio
+region: top_header
 weight: 0
 provider: null
 plugin: 'superfish:main'

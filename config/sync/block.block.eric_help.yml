@@ -1,0 +1,22 @@
+uuid: d013054e-924f-44c5-9c4e-d93200a950f9
+langcode: en
+status: true
+dependencies:
+  module:
+    - help
+  theme:
+    - eric
+_core:
+  default_config_hash: MhtNdV__HKRTab0ZPjkPNfYL4Ng4UPBucDLoC7Rg5Eo
+id: eric_help
+theme: eric
+region: top_header_form
+weight: -8
+provider: null
+plugin: help_block
+settings:
+  id: help_block
+  label: Help
+  provider: help
+  label_display: '0'
+visibility: {  }

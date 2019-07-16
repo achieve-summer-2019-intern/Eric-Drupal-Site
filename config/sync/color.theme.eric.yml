@@ -1,0 +1,18 @@
+palette:
+  top: '#25366A'
+  bottom: '#25366A'
+  bg: '#434343'
+  sidebar: '#434343'
+  sidebarborders: '#3B3B3B'
+  footer: '#292929'
+  button: '#007bff'
+  buttonhover: '#0256b1'
+  titleslogan: '#8DCEE6'
+  text: '#FFFFFF'
+  link: '#FFFFFF'
+logo: 'public://color/eric-2e96f82b/logo.svg'
+stylesheets:
+  - 'public://color/eric-2e96f82b/colors.css'
+files:
+  - 'public://color/eric-2e96f82b/logo.svg'
+  - 'public://color/eric-2e96f82b/colors.css'

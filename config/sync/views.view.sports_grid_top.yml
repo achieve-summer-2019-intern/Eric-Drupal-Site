@@ -203,6 +203,7 @@ display:
           entity_type: node
           plugin_id: taxonomy_index_tid_depth
       display_extenders: {  }
+      css_class: ''
     cache_metadata:
       max-age: -1
       contexts:
@@ -227,7 +228,7 @@ display:
           automatic_width: true
           alignment: horizontal
           col_class_default: true
-          col_class_custom: ''
+          col_class_custom: col-lg-6
           row_class_default: true
           row_class_custom: ''
       defaults:

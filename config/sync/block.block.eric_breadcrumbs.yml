@@ -1,0 +1,22 @@
+uuid: 8091b74e-f15e-4ced-8df2-5df349d4336f
+langcode: en
+status: false
+dependencies:
+  module:
+    - system
+  theme:
+    - eric
+_core:
+  default_config_hash: wDR9JKEATSWldBjw8du8s3G2zjEYeQf88nlld11hMLo
+id: eric_breadcrumbs
+theme: eric
+region: primary_menu
+weight: -8
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: Breadcrumbs
+  provider: system
+  label_display: '0'
+visibility: {  }
