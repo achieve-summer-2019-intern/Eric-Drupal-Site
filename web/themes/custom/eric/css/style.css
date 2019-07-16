@@ -24,11 +24,18 @@ h1 div {
 }
 
 #sidebar_second {
-    margin-left: 25px;
+    margin-left: 100px;
+    min-width: 375px;
+    max-height: 1400px;
+    overflow: auto;
+    list-style-type: none;
 }
-
-/* #3A3A3A */
 
 .contextual-region.node.node--type-sporting-event.node--view-mode-sports-grid-bottom.clearfix {
     background: #3A3A3A;
+    margin-bottom: 10px;
+    min-width: 350px;
+    /* max-width: 300px; */
+    min-height: 320px;
+    max-height: 320px;
 }
