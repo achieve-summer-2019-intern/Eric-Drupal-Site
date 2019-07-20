@@ -43,6 +43,11 @@
     border: 1px solid #3E4980;
 }
 
+/* Add box shadow to each of the navigation tabs */
+.sf-depth-1.menuparent.sfHover {
+    box-shadow: inset 0px -5px 0px rgba(255, 255, 255);
+}
+
 /* Change background color of drop-down menus */
 #superfish-main li ul {
     background-color: #4F5CA2;
@@ -50,8 +55,8 @@
 
 /* Changes width of drop-down menus */
 #superfish-main li ul li {
+    margin-top: 5%;
     width: 15.5em;
-    float: none;
 }
 
 /* Create top and bottom margins for page title and makes highlighted region span whole width of page */
@@ -116,7 +121,8 @@
 
 /* Scrollable sidebar */
 #sidebar_second {
-    max-height: 60%;
+    margin-top: 3%;
+    max-height: 90%;
     overflow-x: hidden;
     overflow-y: scroll;
 }
@@ -129,11 +135,45 @@
     margin-left: -1%;
 }
 
+/* Sets all tiles in sidebar to have relative coordinates */
 #list-container {
     position: relative;
 }
 
+/* Makes it so the links (images) are absolute to one another, allows them to take up the whole cell */
+#list-container > a {
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
 
-#list-container > div.league, #list-container > div.category, #list-container > div.title {
+/* Makes image opaque and sets z-index so that it is below the text */
+#list-container > a > img {
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-attachment: fixed;
+    opacity: 0.5;
+}
+
+/* Each cell is set to a specified size, otherwise system tries to auto-format causing each thumbnail to be cropped */
+#block-eric-views-block-sidebar-block-1-2 div.view-content.row li {
+    min-height: 120px;
+    min-width: 320px;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+/* Little bit of padding at the top of each cell */
+#list-container > div.league {
+    padding-top: 10%;
+}
+
+/* Sets all the text elements in each cell to have a z-index of 2, and gives each relative coordinates */
+#list-container > div.league, #list-container > div.category, #list-container > div.title, #list-container > div.date {
     z-index: 2;
+    position: relative;
 }
