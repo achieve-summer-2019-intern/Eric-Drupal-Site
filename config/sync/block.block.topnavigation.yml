@@ -1,22 +1,22 @@
-uuid: 59b19652-a521-4eda-b3fc-c37a97f5e8d7
+uuid: 9d6bb1e2-b302-4a00-8a7d-1eab347db8b3
 langcode: en
 status: true
 dependencies:
   config:
-    - system.menu.main
+    - system.menu.top-navigation
   module:
     - superfish
   theme:
     - eric
-id: eric_mainnavigation_2
+id: topnavigation
 theme: eric
-region: primary_menu
-weight: -8
+region: top_header
+weight: -6
 provider: null
-plugin: 'superfish:main'
+plugin: 'superfish:top-navigation'
 settings:
-  id: 'superfish:main'
-  label: 'Main navigation'
+  id: 'superfish:top-navigation'
+  label: 'Top Navigation'
   provider: superfish
   label_display: '0'
   level: '1'

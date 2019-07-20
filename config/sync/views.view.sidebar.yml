@@ -4,14 +4,14 @@ status: true
 dependencies:
   config:
     - field.storage.node.field_date
-    - field.storage.node.field_event_video
+    - field.storage.node.field_event_thumbnail_large
     - field.storage.node.field_league
     - field.storage.node.field_sport_type
     - image.style.small_thumbnail_320x120
     - node.type.sporting_event
   module:
     - datetime
-    - media
+    - image
     - node
     - taxonomy
     - user
@@ -76,6 +76,70 @@ display:
           separator: ''
           hide_empty: false
       fields:
+        field_event_thumbnail_large:
+          id: field_event_thumbnail_large
+          table: node__field_event_thumbnail_large
+          field: field_event_thumbnail_large
+          relationship: none
+          group_type: group
+          admin_label: ''
+          label: ''
+          exclude: true
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_style: small_thumbnail_320x120
+            image_link: content
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+          plugin_id: field
         title:
           id: title
           table: node_field_data
@@ -127,7 +191,7 @@ display:
           click_sort_column: value
           type: string
           settings:
-            link_to_entity: true
+            link_to_entity: false
           group_column: value
           group_columns: {  }
           group_rows: true
@@ -190,74 +254,11 @@ display:
           empty_zero: false
           hide_alter_empty: true
           click_sort_column: value
-          type: datetime_plain
+          type: datetime_default
           settings:
             timezone_override: ''
+            format_type: short
           group_column: value
-          group_columns: {  }
-          group_rows: true
-          delta_limit: 0
-          delta_offset: 0
-          delta_reversed: false
-          delta_first_last: false
-          multi_type: separator
-          separator: ', '
-          field_api_classes: false
-          plugin_id: field
-        field_event_video:
-          id: field_event_video
-          table: node__field_event_video
-          field: field_event_video
-          relationship: none
-          group_type: group
-          admin_label: ''
-          label: ''
-          exclude: true
-          alter:
-            alter_text: false
-            text: ''
-            make_link: false
-            path: ''
-            absolute: false
-            external: false
-            replace_spaces: false
-            path_case: none
-            trim_whitespace: false
-            alt: ''
-            rel: ''
-            link_class: ''
-            prefix: ''
-            suffix: ''
-            target: ''
-            nl2br: false
-            max_length: 0
-            word_boundary: true
-            ellipsis: true
-            more_link: false
-            more_link_text: ''
-            more_link_path: ''
-            strip_tags: false
-            trim: false
-            preserve_tags: ''
-            html: false
-          element_type: ''
-          element_class: ''
-          element_label_type: ''
-          element_label_class: ''
-          element_label_colon: false
-          element_wrapper_type: ''
-          element_wrapper_class: ''
-          element_default_classes: true
-          empty: ''
-          hide_empty: false
-          empty_zero: false
-          hide_alter_empty: true
-          click_sort_column: target_id
-          type: media_thumbnail
-          settings:
-            image_style: small_thumbnail_320x120
-            image_link: content
-          group_column: target_id
           group_columns: {  }
           group_rows: true
           delta_limit: 0
@@ -405,7 +406,7 @@ display:
           exclude: false
           alter:
             alter_text: true
-            text: "<div id=\"list-container\">\r\n{{ field_event_video }}\r\n<div class=\"league\">{{ field_league }}</div>\r\n<div class=\"category\">{{ field_sport_type }}</div>\r\n<div class=\"title\">{{ title }}</div>\r\n<div class=\"date\">{{ field_date }}</div>\r\n</div>"
+            text: "<div id=\"list-container\">\r\n{{ field_event_thumbnail_large }}\r\n<div class=\"league\">{{ field_league }}</div>\r\n<div class=\"category\">{{ field_sport_type }}</div>\r\n<div class=\"title\">{{ title }}</div>\r\n<div class=\"date\">{{ field_date }}</div>\r\n</div>"
             make_link: false
             path: ''
             absolute: false
@@ -536,7 +537,7 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_date'
-        - 'config:field.storage.node.field_event_video'
+        - 'config:field.storage.node.field_event_thumbnail_large'
         - 'config:field.storage.node.field_league'
         - 'config:field.storage.node.field_sport_type'
   block_1:
@@ -556,6 +557,6 @@ display:
         - user.permissions
       tags:
         - 'config:field.storage.node.field_date'
-        - 'config:field.storage.node.field_event_video'
+        - 'config:field.storage.node.field_event_thumbnail_large'
         - 'config:field.storage.node.field_league'
         - 'config:field.storage.node.field_sport_type'

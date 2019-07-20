@@ -28,7 +28,7 @@ logo:
   path: 'public://logo--eversport--white_0.png'
 favicon:
   use_default: false
-  path: 'public://apple-touch-icon-57x57.png'
+  path: 'public://EverSport Logo.png'
   mimetype: image/png
 bootstrap_barrio_region_clean_top_header: 0
 bootstrap_barrio_region_class_top_header: row

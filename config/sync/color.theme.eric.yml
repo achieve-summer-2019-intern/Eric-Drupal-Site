@@ -10,9 +10,9 @@ palette:
   titleslogan: '#8DCEE6'
   text: '#FFFFFF'
   link: '#FFFFFF'
-logo: 'public://color/eric-15a3f766/logo.svg'
+logo: 'public://color/eric-1026e2fe/logo.svg'
 stylesheets:
-  - 'public://color/eric-15a3f766/colors.css'
+  - 'public://color/eric-1026e2fe/colors.css'
 files:
-  - 'public://color/eric-15a3f766/logo.svg'
-  - 'public://color/eric-15a3f766/colors.css'
+  - 'public://color/eric-1026e2fe/logo.svg'
+  - 'public://color/eric-1026e2fe/colors.css'

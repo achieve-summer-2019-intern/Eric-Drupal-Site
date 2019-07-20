@@ -11,7 +11,7 @@ _core:
 id: eric_breadcrumbs
 theme: eric
 region: primary_menu
-weight: -8
+weight: -9
 provider: null
 plugin: system_breadcrumb_block
 settings:
