@@ -21,6 +21,8 @@ module:
   ctools: 0
   datetime: 0
   dblog: 0
+  devel: 0
+  devel_php: 0
   dynamic_page_cache: 0
   editor: 0
   field: 0
@@ -31,6 +33,9 @@ module:
   history: 0
   honeypot: 0
   image: 0
+  intern: 0
+  intern_service: 0
+  kint: 0
   layout_discovery: 0
   libraries: 0
   link: 0
