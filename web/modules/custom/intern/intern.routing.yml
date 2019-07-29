@@ -1,0 +1,25 @@
+intern.content:
+  path: '/internship'
+  defaults:
+    # Don't need to put the src folder b/c it knows all controllers have to be in src folder
+    _controller: '\Drupal\intern\Controller\InternshipController::content'
+    _title: 'Class of Summer 2019'
+  requirements:
+    _permission: 'access content'
+
+intern.dynamic_content:
+  path: '/internship/{count}'
+  defaults:
+    # Don't need to put the src folder b/c it knows all controllers have to be in src folder
+    _controller: '\Drupal\intern\Controller\InternshipController::dynamicContent'
+    _title: 'Class of Summer 2019 Count'
+  requirements:
+    _permission: 'access content'
+
+intern.first_form:
+  path: '/first-form'
+  defaults:
+    _form: '\Drupal\intern\Form\FirstForm'
+    _title: 'User Account Creation'
+  requirements:
+    _permission: 'access content'

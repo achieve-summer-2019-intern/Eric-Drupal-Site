@@ -1,0 +1,4 @@
+services:
+  calculate.tiredness.service:
+    class: Drupal\calculate_tiredness\CalculateTiredness
+    arguments:

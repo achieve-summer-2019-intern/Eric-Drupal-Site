@@ -1,0 +1,4 @@
+name: Calculate Tiredness
+type: module
+description: Module that calculates how tired a person is.
+core: 8.x

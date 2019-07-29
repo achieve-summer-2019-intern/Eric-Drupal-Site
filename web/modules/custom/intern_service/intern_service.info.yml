@@ -1,0 +1,4 @@
+name: Example Drupal Service
+type: module
+description: A module that declares an example service.
+core: 8.x

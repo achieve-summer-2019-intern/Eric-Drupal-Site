@@ -50,14 +50,18 @@
 
 /* Change background color of drop-down menus */
 #superfish-main li ul {
-    background-color: #4F5CA2;
+    background-color: white;
+}
+
+#superfish-main li li a {
+    color: black;
 }
 
 /* Changes width of drop-down menus */
-#superfish-main li ul li {
+/* #superfish-main li ul li {
     margin-top: 5%;
     width: 15.5em;
-}
+} */
 
 /* Create top and bottom margins for page title and makes highlighted region span whole width of page */
 .highlighted > aside {
@@ -124,7 +128,7 @@
     margin-top: 3%;
     max-height: 90%;
     overflow-x: hidden;
-    overflow-y: scroll;
+    overflow-y: auto;
 }
 
 /* Format sidebar list settings */

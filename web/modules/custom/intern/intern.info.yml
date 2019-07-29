@@ -1,0 +1,5 @@
+name: 'Intern'
+description: 'Module for Achieve Interns'
+type: module
+core: 8.x
+package: 'Custom'
