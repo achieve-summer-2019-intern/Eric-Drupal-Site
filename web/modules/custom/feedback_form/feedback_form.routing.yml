@@ -1,0 +1,15 @@
+# feedback_form.content:
+#   path: '/submitted-feedback-forms'
+#   defaults:
+#     _controller: '\Drupal\feedback_form\Controller\FeedbackController::formContent'
+#     _title: 'Submitted Feedback Forms'
+#   requirements:
+#     _permission: 'access content'
+
+feedback_form.form:
+  path: '/site-feedback-form'
+  defaults:
+    _title: 'Submit Site Feedback'
+    _form: '\Drupal\feedback_form\Form\FeedbackForm'
+  requirements:
+    _permission: 'access content'

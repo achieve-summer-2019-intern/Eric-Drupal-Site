@@ -37,7 +37,8 @@
 
 /* Formatting for each individual block element in the Superfish nav bar */
 #superfish-main li {
-    width: 20%;
+    min-width: 20%;
+    position: relative;
     text-align: center;
     background: #4F5CA2;
     border: 1px solid #3E4980;
@@ -45,23 +46,19 @@
 
 /* Add box shadow to each of the navigation tabs */
 .sf-depth-1.menuparent.sfHover {
-    box-shadow: inset 0px -5px 0px rgba(255, 255, 255);
+    box-shadow: inset 0px 5px 0px rgba(255, 255, 255);
 }
 
 /* Change background color of drop-down menus */
-#superfish-main li ul {
+#superfish-main li ul li, #superfish-top-navigation li ul li {
     background-color: white;
+    min-width: 100%;
 }
 
-#superfish-main li li a {
+/* Change color of text in drop-down menu */
+#superfish-main li li a, #superfish-top-navigation li li a {
     color: black;
 }
-
-/* Changes width of drop-down menus */
-/* #superfish-main li ul li {
-    margin-top: 5%;
-    width: 15.5em;
-} */
 
 /* Create top and bottom margins for page title and makes highlighted region span whole width of page */
 .highlighted > aside {

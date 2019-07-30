@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Contains feedback_form.module
+ */
+
+use Drupal\node\Entity\Node;
+
+function createSubmissionForm() {
+    $node = Node::create([
+        'type'  => 'page',
+        'title' => 'Feedback Form',
+        'path'  => '/submitted-feedback-forms',
+    ]);
+
+    $node->set('uid', 1);
+    $node->setPublished();
+    $node->save();
+
+    // $node->set('title', 'Feedback Form');
+
+    
+}
