@@ -15,6 +15,13 @@ class FeedbackForm extends FormBase {
     }
 
     public function buildForm(array $form, FormStateInterface $form_state) {
+        $form['feedback_title'] = [
+            '#type'        => 'textfield',
+            '#title'       => 'Feedback Title',
+            '#description' => 'Enter the title of your ticket',
+            '#required'    => TRUE,
+        ];
+
         $form['name'] = [
             '#type'        => 'textfield',
             '#title'       => 'Full Name',
@@ -48,8 +55,9 @@ class FeedbackForm extends FormBase {
     }
 
     public function submitForm(array &$form, FormStateInterface $form_state) {
-        foreach($form_state->getValues() as $key => $value) {
-            drupal_set_message($key . ': ' . $value);
-        }
+        // foreach($form_state->getValues() as $key => $value) {
+        //     drupal_set_message($key . ': ' . $value);
+        // }
+        createSubmissionForm($form_state);
     }
 }

@@ -7,14 +7,18 @@
 
 use Drupal\node\Entity\Node;
 
-function createSubmissionForm() {
+function createSubmissionForm($form_state) {
     $node = Node::create([
-        'type'  => 'page',
-        'title' => 'Feedback Form',
+        'type'  => 'submitted_feedback_form',
+        'title' => 'Submitted Feedback Forms',
         'path'  => '/submitted-feedback-forms',
     ]);
 
-    $node->set('uid', 1);
+    $node->set('field_feedback_title', $form_state->getValue('feedback_title'));
+    $node->set('field_full_sender_name', $form_state->getValue('name'));
+    $node->set('field_feedback_description', $form_state->getValue('feedback_description'));
+    
+    
     $node->setPublished();
     $node->save();
 

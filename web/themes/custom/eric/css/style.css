@@ -21,9 +21,12 @@
 
 /* Pushes first nav bar to the right to match EverSport website */
 #block-topnavigation {
-    float: left;
     max-width: 100%;
-    margin-left: -150%;
+    margin-left: -80%;
+}
+
+#block-eric-account-menu {
+    margin-left: 50%;
 }
 
 /* Pushes second nav bar to the right to match EverSport website */
@@ -156,7 +159,7 @@
     left: 0;
     z-index: 1;
     background-attachment: fixed;
-    opacity: 0.5;
+    opacity: 0.3;
 }
 
 /* Each cell is set to a specified size, otherwise system tries to auto-format causing each thumbnail to be cropped */
@@ -178,3 +181,6 @@
     z-index: 2;
     position: relative;
 }
+
+/* for the text to be in one row */
+/* display: flex-row */
