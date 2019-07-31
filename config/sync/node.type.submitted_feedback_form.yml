@@ -1,0 +1,17 @@
+uuid: 80ee715a-d048-4a08-ae8b-9ea7ec47e2d6
+langcode: en
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Submitted Feedback Form'
+type: submitted_feedback_form
+description: 'A submitted feedback form.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

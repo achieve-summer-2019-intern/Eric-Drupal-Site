@@ -1,0 +1,19 @@
+uuid: 6ca467f3-fdfc-4847-a6d2-292cc2253154
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_feedback_description
+    - node.type.submitted_feedback_form
+id: node.submitted_feedback_form.field_feedback_description
+field_name: field_feedback_description
+entity_type: node
+bundle: submitted_feedback_form
+label: 'Feedback Description'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string_long

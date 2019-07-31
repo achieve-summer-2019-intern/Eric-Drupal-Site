@@ -1,0 +1,19 @@
+uuid: c7db308a-dea2-4f2d-b402-f3e28775ac90
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_feedback_description
+field_name: field_feedback_description
+entity_type: node
+type: string_long
+settings:
+  case_sensitive: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

@@ -1,0 +1,54 @@
+uuid: 1d96d654-47cd-4dbb-bc4b-bc8636014036
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.node.submitted_feedback_form.body
+    - field.field.node.submitted_feedback_form.field_feedback_description
+    - field.field.node.submitted_feedback_form.field_feedback_title
+    - field.field.node.submitted_feedback_form.field_full_sender_name
+    - node.type.submitted_feedback_form
+  module:
+    - text
+    - user
+id: node.submitted_feedback_form.default
+targetEntityType: node
+bundle: submitted_feedback_form
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_feedback_description:
+    weight: 104
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  field_feedback_title:
+    weight: 102
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_full_sender_name:
+    weight: 103
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  links:
+    weight: 100
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

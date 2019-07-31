@@ -1,0 +1,19 @@
+uuid: bec44253-bee5-4150-bb9e-3060ae0ba4b6
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_full_sender_name
+    - node.type.submitted_feedback_form
+id: node.submitted_feedback_form.field_full_sender_name
+field_name: field_full_sender_name
+entity_type: node
+bundle: submitted_feedback_form
+label: 'Full Sender Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

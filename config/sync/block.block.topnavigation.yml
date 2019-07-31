@@ -11,7 +11,7 @@ dependencies:
 id: topnavigation
 theme: eric
 region: top_header
-weight: -6
+weight: -9
 provider: null
 plugin: 'superfish:top-navigation'
 settings:

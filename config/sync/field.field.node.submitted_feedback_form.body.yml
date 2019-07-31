@@ -1,0 +1,22 @@
+uuid: b1075d36-93e9-4f32-9607-501a7e635f2f
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.submitted_feedback_form
+  module:
+    - text
+id: node.submitted_feedback_form.body
+field_name: body
+entity_type: node
+bundle: submitted_feedback_form
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
