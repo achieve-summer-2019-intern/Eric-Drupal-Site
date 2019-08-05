@@ -131,11 +131,23 @@
     overflow-y: auto;
 }
 
+#block-eric-views-block-sidebar-block-1-2 > h2 {
+    background-color: #4F5CA2;
+    font-size: large;
+    font-weight: lighter;
+    text-align: center;
+    min-height: 3em;
+    min-width: 17em;
+    border: none;
+    padding-top: 15px;
+    margin-top: -5%;
+}
+
 /* Format sidebar list settings */
 .view-content.row > div > ul{
     list-style-type: none;
     padding-left: 0;
-    margin-top: -5%;
+    /* margin-top: -5%; */
     margin-left: -1%;
 }
 
